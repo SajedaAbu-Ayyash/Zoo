@@ -9,8 +9,8 @@ class Animal:
         print(f"Name: {self.name}, Health: {self.health}, Happiness: {self.happiness}")
 
     def feed(self):
-        self.health = min(10, self.health + 10)
-        self.happiness = min(10, self.happiness + 10)
+        self.health = self.health + 10
+        self.happiness = self.happiness + 10
 
 class Lion(Animal):
     def __init__(self, name, age):
